@@ -48,7 +48,7 @@ namespace u17
                 return;
             }
 
-            MessageBox.Show("Мероприятие добвалено.");
+            MessageBox.Show("Доклад добвален.");
 
             this.Close();
         }

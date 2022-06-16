@@ -101,7 +101,7 @@
             // button9
             // 
             this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button9.Location = new System.Drawing.Point(6, 482);
+            this.button9.Location = new System.Drawing.Point(6, 469);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(186, 23);
             this.button9.TabIndex = 12;
@@ -122,7 +122,7 @@
             // button8
             // 
             this.button8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button8.Location = new System.Drawing.Point(6, 511);
+            this.button8.Location = new System.Drawing.Point(6, 498);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(186, 23);
             this.button8.TabIndex = 10;
@@ -134,7 +134,7 @@
             // 
             this.button7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button7.Enabled = false;
-            this.button7.Location = new System.Drawing.Point(6, 453);
+            this.button7.Location = new System.Drawing.Point(6, 440);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(186, 23);
             this.button7.TabIndex = 9;
