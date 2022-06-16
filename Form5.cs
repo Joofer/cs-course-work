@@ -189,17 +189,20 @@ namespace u17
 
         private bool SaveSpeakers(int participant)
         {
-            int conference = (int)conferencesDataSet.Tables[0].Rows[comboBox1.SelectedIndex].ItemArray[0];
-            int report = (int)reportsDataSet.Tables[0].Rows[comboBox2.SelectedIndex].ItemArray[0];
+            int conference = (int)conferencesDataSet.Tables[0].Rows[comboBox1.SelectedIndex - 1].ItemArray[0];
 
             string query;
 
-            query = @"INSERT INTO [" + ConfigurationManager.AppSettings["speakers"] + @"]";
-
             if (comboBox2.SelectedIndex != -1 && comboBox2.SelectedIndex != 0)
-                query += @"INSERT INTO [" + ConfigurationManager.AppSettings["speakers"] + @"] VALUES ('" + participant + @"', '" + report + @"', '" + conference + @"');";
+            {
+                int report = (int)reportsDataSet.Tables[0].Rows[comboBox2.SelectedIndex - 1].ItemArray[0];
+                query = @"INSERT INTO [" + ConfigurationManager.AppSettings["speakers"] + @"] VALUES ('" + participant + @"', '" + report + @"', '" + conference + @"');";
+
+            }
             else
+            {
                 query = @"INSERT INTO [" + ConfigurationManager.AppSettings["speakers"] + @"](participant, conference) VALUES ('" + participant + @"', '" + conference + @"');";
+            }
 
             Program.dataSet = new DataSet();
 
