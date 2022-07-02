@@ -22,7 +22,7 @@ namespace u17
 
         public void Connect()
         {
-            string connect = @"Server=" + ConfigurationManager.AppSettings["server"] + ";Database=" + ConfigurationManager.AppSettings["database"] + ";Trusted_Connection=True;";
+            string connect = @"Server=" + ConfigurationManager.AppSettings["server"] + ";Database=" + ConfigurationManager.AppSettings["database"] + ";User Id=" + ConfigurationManager.AppSettings["username"] + ";Password=" + ConfigurationManager.AppSettings["password"] + ";";
 
             Program.conn = new SqlConnection(connect);
 

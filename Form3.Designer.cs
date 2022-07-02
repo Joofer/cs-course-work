@@ -34,6 +34,10 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -104,16 +108,58 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.textBox8);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.textBox7);
+            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(360, 78);
+            this.groupBox1.Size = new System.Drawing.Size(360, 125);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Общие";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox8.Location = new System.Drawing.Point(84, 97);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(270, 20);
+            this.textBox8.TabIndex = 8;
+            this.textBox8.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 100);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 13);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "Пароль";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox7.Location = new System.Drawing.Point(84, 71);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(270, 20);
+            this.textBox7.TabIndex = 6;
+            this.textBox7.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(6, 74);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Логин";
             // 
             // groupBox2
             // 
@@ -128,7 +174,7 @@
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Location = new System.Drawing.Point(12, 96);
+            this.groupBox2.Location = new System.Drawing.Point(12, 143);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(360, 131);
             this.groupBox2.TabIndex = 6;
@@ -217,9 +263,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.checkBox1);
-            this.groupBox3.Location = new System.Drawing.Point(12, 229);
+            this.groupBox3.Location = new System.Drawing.Point(12, 280);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(360, 141);
+            this.groupBox3.Size = new System.Drawing.Size(360, 90);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Другие";
@@ -290,5 +336,9 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label7;
     }
 }

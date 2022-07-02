@@ -19,6 +19,8 @@ namespace u17
 
             textBox1.Text = ReadSetting("server");
             textBox2.Text = ReadSetting("database");
+            textBox7.Text = ReadSetting("username");
+            textBox8.Text = ReadSetting("password");
 
             textBox4.Text = ReadSetting("conference");
             textBox3.Text = ReadSetting("participant");
@@ -73,9 +75,13 @@ namespace u17
         {
             string server = textBox1.Text;
             string database = textBox2.Text;
+            string username = textBox7.Text;
+            string password = textBox8.Text;
 
             AddUpdateAppSettings("server", server);
             AddUpdateAppSettings("database", database);
+            AddUpdateAppSettings("username", username);
+            AddUpdateAppSettings("password", password);
 
             string conference = textBox4.Text;
             string participant = textBox3.Text;
