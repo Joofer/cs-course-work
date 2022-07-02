@@ -145,7 +145,7 @@ namespace u17
         {
             int participant = Convert.ToInt32(dataSet1.Tables[0].Rows[comboBox1.SelectedIndex].ItemArray[0]);
             int conference = Convert.ToInt32(dataSet2.Tables[0].Rows[comboBox2.SelectedIndex].ItemArray[0]);
-            int report = (comboBox3.SelectedIndex != -1 ? Convert.ToInt32(dataSet3.Tables[0].Rows[comboBox3.SelectedIndex].ItemArray[0]) : -1);
+            int report = (comboBox3.SelectedIndex != -1 && comboBox3.SelectedIndex != 0 ? Convert.ToInt32(dataSet3.Tables[0].Rows[comboBox3.SelectedIndex - 1].ItemArray[0]) : -1);
 
             string query;
 
