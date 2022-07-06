@@ -17,7 +17,19 @@ namespace u17
         public Form1()
         {
             InitializeComponent();
+            SetComboItems();
             Connect();
+        }
+
+        private void SetComboItems()
+        {
+            comboBox1.Items.AddRange(new string[]
+            {
+                "Мероприятия",
+                "Участники",
+                "Список участников и докладчиков",
+                "Доклады"
+            });
         }
 
         public void Connect()
@@ -51,7 +63,7 @@ namespace u17
             else
             {
                 OnConnectionSuccess();
-                Pick("conference");
+                Pick(0);
             }
         }
 
@@ -139,15 +151,9 @@ namespace u17
 
             label4.Hide();
 
-            label1.Show();
-            label2.Show();
-            label3.Show();
-            label5.Show();
-            button1.Show();
-            button4.Show();
-            button6.Show();
+            comboBox1.Show();
+
             button7.Show();
-            button11.Show();
 
             tabControl1.Show();
 
@@ -161,17 +167,11 @@ namespace u17
 
             label4.Show();
 
+            comboBox1.Hide();
+
             button7.Enabled = false;
 
-            label1.Hide();
-            label2.Hide();
-            label3.Hide();
-            label5.Hide();
-            button1.Hide();
-            button4.Hide();
-            button6.Hide();
             button7.Hide();
-            button11.Hide();
 
             tabControl1.Hide();
 
@@ -243,6 +243,26 @@ namespace u17
             MessageBox.Show("Данные сохранены.");
         }
 
+        private void Pick(int index)
+        {
+            comboBox1.SelectedIndex = index;
+            switch (index)
+            {
+                case 0:
+                    Pick("conference");
+                    break;
+                case 1:
+                    Pick("participant");
+                    break;
+                case 2:
+                    Pick("speakers");
+                    break;
+                case 3:
+                    Pick("report");
+                    break;
+            }
+        }
+
         private void Pick(string name)
         {
             Program.current_tab = name;
@@ -267,26 +287,6 @@ namespace u17
             }
 
             GetData(ConfigurationManager.AppSettings[name]);
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Pick("conference");
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Pick("participant");
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-            Pick("speakers");
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Pick("report");
         }
 
         private void button7_Click(object sender, EventArgs e)
@@ -434,6 +434,11 @@ namespace u17
         private void dataGridView1_DataError(object sender, DataGridViewDataErrorEventArgs e)
         {
             MessageBox.Show("Некоторые поля неверно заполены.");
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Pick(comboBox1.SelectedIndex);
         }
     }
 }
