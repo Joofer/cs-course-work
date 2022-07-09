@@ -12,7 +12,6 @@ namespace u17
     {
         public static SqlConnection conn;
         public static SqlDataAdapter adapter;
-        public static SqlCommand cmd;
         public static DataSet dataSet;
         public static string current_tab;
 
@@ -24,7 +23,7 @@ namespace u17
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new mainForm());
         }
     }
 }
