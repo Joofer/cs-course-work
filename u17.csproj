@@ -89,11 +89,11 @@
     <Compile Include="reportAddForm.Designer.cs">
       <DependentUpon>reportAddForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="reportEditForm.cs">
+    <Compile Include="reportSearchForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="reportEditForm.Designer.cs">
-      <DependentUpon>reportEditForm.cs</DependentUpon>
+    <Compile Include="reportSearchForm.Designer.cs">
+      <DependentUpon>reportSearchForm.cs</DependentUpon>
     </Compile>
     <Compile Include="reportsReportForm.cs">
       <SubType>Form</SubType>
@@ -166,8 +166,8 @@
     <EmbeddedResource Include="reportAddForm.resx">
       <DependentUpon>reportAddForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="reportEditForm.resx">
-      <DependentUpon>reportEditForm.cs</DependentUpon>
+    <EmbeddedResource Include="reportSearchForm.resx">
+      <DependentUpon>reportSearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="reportsReportForm.resx">
       <DependentUpon>reportsReportForm.cs</DependentUpon>
