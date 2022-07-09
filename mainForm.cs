@@ -380,7 +380,7 @@ namespace u17
                     break;
 
                 case "report":
-                    reportEditForm form16 = new reportEditForm();
+                    reportSearchForm form16 = new reportSearchForm();
                     if (ConfigurationManager.AppSettings["multi-window"] == "true")
                         form16.Show();
                     else

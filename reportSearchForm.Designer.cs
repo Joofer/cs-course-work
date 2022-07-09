@@ -1,6 +1,6 @@
 ﻿namespace u17
 {
-    partial class reportEditForm
+    partial class reportSearchForm
     {
         /// <summary>
         /// Required designer variable.

@@ -12,12 +12,12 @@ using System.Windows.Forms;
 
 namespace u17
 {
-    public partial class reportEditForm : Form
+    public partial class reportSearchForm : Form
     {
         DataSet dataSet;
         int id;
 
-        public reportEditForm()
+        public reportSearchForm()
         {
             InitializeComponent();
         }
