@@ -22,4 +22,4 @@
 В тестовой версии программы записаны данные для подключения к существующей базе данных.  
 Backup исходной базы данных можно [скачать здесь](https://github.com/Joofer/cs-course-work/raw/master/conference.bak).
 ### Debug version
-[Download](https://drive.google.com/uc?export=download&id=19-6AVP56xtFWJs_Nhp8rbvUsgo6mJfz3)
+[Download](https://drive.google.com/uc?export=download&id=1DlF3XHag1L9jE59PrRHWXhpZwo79KFVc)
